@@ -1,0 +1,48 @@
+{
+  "name": "fontend-engineering-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "npm run clean && tsc",
+    "lint": "eslint src --ext .js,.ts --cache --fix",
+    "clean": "rm -rf dist",
+    "prepare": "husky install"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnNashs/fontend-engineering-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnNashs/fontend-engineering-test/issues"
+  },
+  "homepage": "https://github.com/JohnNashs/fontend-engineering-test#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-config-standard-with-typescript": "^21.0.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
