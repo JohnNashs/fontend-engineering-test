@@ -7,9 +7,9 @@ module.exports = {
   extends: ['standard', 'eslint-config-standard-with-typescript', 'prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 12,
     sourceType: 'module',
-    project: './tsconfig.eslint.json'
+    project: './tsconfig.json'
   },
   plugins: ['@typescript-eslint', 'prettier'],
   rules: {
